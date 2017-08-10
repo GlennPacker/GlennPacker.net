@@ -410,6 +410,7 @@
     <Content Include="Js\Controllers\frontEndCtrl.js" />
     <Content Include="Js\Controllers\clientsCtrl.js" />
     <Content Include="Js\Controllers\homeCtrl.js" />
+    <Content Include="Js\Directives\foot.js" />
     <Content Include="Js\Directives\CollapsiblePanel.js" />
     <Content Include="Js\Directives\formInput.js" />
     <Content Include="Js\Directives\navigation.js" />
@@ -420,6 +421,7 @@
     <Content Include="Js\Templates\Contact.html" />
     <Content Include="Js\Templates\Clients.html" />
     <Content Include="Js\Templates\BackEnd.html" />
+    <Content Include="Js\Templates\Footer.html" />
     <Content Include="Js\Templates\FrontEnd.html" />
     <Content Include="Js\Templates\Home.html" />
     <Content Include="Js\Templates\messages.html" />
@@ -476,8 +478,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />

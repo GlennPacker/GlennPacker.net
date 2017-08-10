@@ -461,7 +461,7 @@ article.main {
 }
 .home .circleimage {
   border-radius: 50%;
-  height: 300px;
+  height: 230px;
   width: auto;
 }
 .home .slide .slide1 img {
@@ -473,12 +473,22 @@ article.main {
   float: left;
   width: 600px;
 }
+.home .panel {
+  height: 425px;
+}
+.frontend .slide .slide1,
+.backend .slide .slide1 {
+  overflow: hidden;
+  height: 265px;
+}
+.frontend .slide .slide1 img,
 .backend .slide .slide1 img {
   height: 265px;
   max-width: 600px;
   width: auto;
   float: left;
 }
+.frontend .slick-slider,
 .backend .slick-slider {
   height: 270px;
 }
@@ -532,4 +542,47 @@ form input.ng-invalid.ng-touched {
 }
 form input.ng-valid.ng-touched {
   background-color: rgba(120, 250, 137, 0.16);
+}
+.padding-top-xs {
+  padding-top: 5px;
+}
+.padding-top-sm {
+  padding-top: 5px;
+}
+.padding-top-md {
+  padding-top: 10px;
+}
+.padding-top-lg {
+  padding-top: 20px;
+}
+.padding-top-xl {
+  padding-top: 40px;
+}
+.margin-top-xl {
+  margin-top: 40px;
+}
+.frontend .panel {
+  height: 375px;
+}
+footer {
+  background-color: #d00b01;
+}
+footer address {
+  display: inline-block;
+}
+footer div {
+  background-color: #d00b01;
+  color: white;
+}
+footer a,
+footer p {
+  color: white;
+}
+footer a:hover {
+  color: wheat;
+}
+.contact footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }

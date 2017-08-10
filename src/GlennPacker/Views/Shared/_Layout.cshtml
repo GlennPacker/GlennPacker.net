@@ -12,22 +12,22 @@
 </head>
 <body>
 
-@Html.Partial("_header")
-    
-<main>
-    <div class="container body-content">
-        
-        @RenderBody()
-        <hr/>
-        <footer>@Html.Partial("_LoginPartial")
-            <p>&copy; @DateTime.Now.Year - GlennPacker.net</p>
-        </footer>
-    </div>
-</main>
+    @Html.Partial("_header")
 
-<navigation></navigation>
-    
+    <main>
+        <div class="container body-content">
 
-@RenderSection("scripts", required: false)
+            @RenderBody()
+
+            <div class="clearfix"> </div>
+
+        </div>
+        <foot></foot>
+    </main>
+         
+    <navigation></navigation>
+
+
+    @RenderSection("scripts", required: false)
 </body>
 </html>

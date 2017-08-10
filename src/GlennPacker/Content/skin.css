@@ -677,7 +677,6 @@ blockquote:after {
   content: "";
 }
 address {
-  margin-bottom: 20px;
   font-style: normal;
   line-height: 1.428571429;
 }
@@ -4963,32 +4962,32 @@ a.list-group-item-danger.active:focus {
   border-bottom-color: #d00b01;
 }
 .panel-success {
-  border-color: #d6e9c6;
+  border-color: #97fe52;
 }
 .panel-success > .panel-heading {
   color: #ffffff;
   background-color: #54d001;
-  border-color: #d6e9c6;
+  border-color: #97fe52;
 }
 .panel-success > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #d6e9c6;
+  border-top-color: #97fe52;
 }
 .panel-success > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #d6e9c6;
+  border-bottom-color: #97fe52;
 }
 .panel-info {
-  border-color: #bce8f1;
+  border-color: #10cefe;
 }
 .panel-info > .panel-heading {
   color: #ffffff;
   background-color: #01a7d0;
-  border-color: #bce8f1;
+  border-color: #10cefe;
 }
 .panel-info > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #bce8f1;
+  border-top-color: #10cefe;
 }
 .panel-info > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #bce8f1;
+  border-bottom-color: #10cefe;
 }
 .panel-warning {
   border-color: #fbeed5;

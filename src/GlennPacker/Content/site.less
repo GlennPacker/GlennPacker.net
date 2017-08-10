@@ -50,7 +50,7 @@ Main Components
 }
 
 h1, h2, h3, h4, h5, h6, p, li {
-    color: #3f475f
+    color: #3f475f;
 }
 
 .cd-header::after {
@@ -92,7 +92,7 @@ header {
         text-decoration: none !important;
 
         span {
-            color: @red
+            color: @red;
         }
     }
 
@@ -524,11 +524,12 @@ article.main {
 }
 
 .home {
-    .circleimage{
+    .circleimage {
         border-radius: 50%;
-        height: 300px;
-        width:auto;
+        height: 230px;
+        width: auto;
     }
+
     .slide {
         .slide1 img {
             height: 349px;
@@ -541,17 +542,29 @@ article.main {
             }
         }
     }
-}
 
-.backend .slide {
-    .slide1 img {
-        height: 265px;
-        max-width: 600px;
-        width: auto;
-        float: left;
+    .panel{
+        height: 425px;
     }
 }
 
+.frontend .slide,
+.backend .slide {
+    .slide1 {
+        overflow: hidden;
+        height: 265px;
+
+        img {
+            height: 265px;
+            max-width: 600px;
+            width: auto;
+            float: left;
+        
+        }
+    }
+}
+
+.frontend .slick-slider,
 .backend .slick-slider {
     height: 270px;
 }
@@ -576,7 +589,7 @@ article.main {
             line-height: 40px;
             background-color: black;
             color: white;
-            padding: 5px
+            padding: 5px;
         }
 
         a {
@@ -635,4 +648,62 @@ form {
             background-color: rgba(120, 250, 137, 0.16);
         }
     }
+}
+
+.padding-top-xs {
+    padding-top: 5px;
+}
+
+.padding-top-sm {
+    padding-top: 5px;
+}
+
+.padding-top-md {
+    padding-top: 10px;
+}
+
+.padding-top-lg {
+    padding-top: 20px;
+}
+
+.padding-top-xl {
+    padding-top: 40px;
+}
+
+.margin-top-xl{
+    margin-top: 40px;
+}
+
+.frontend {
+    .panel {
+        height: 375px;
+    }
+}
+
+footer{
+    background-color: #d00b01;
+    
+    address{
+        display:inline-block;
+    }
+
+    div {
+    background-color: #d00b01;
+    color: white;
+    }
+
+    a, p{
+        color: white;
+    }
+
+    a:hover{
+        color:wheat;
+    }
+    
+}
+
+.contact footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
