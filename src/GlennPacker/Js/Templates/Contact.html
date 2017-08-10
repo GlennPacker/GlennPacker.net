@@ -1,0 +1,23 @@
+﻿<div>
+    <h1>Contact Glenn</h1>
+
+    <form name="contactForm" ng-submit="vm.send()">
+        <div class="col-md-12">
+            <div  forminput>
+                <label for="from">Name</label>
+                <input type="text" id="name" ng-model="vm.contact.Name" required="" placeholder="Name">
+            </div>
+
+            <div forminput>
+                <label for="from">Email Address</label>
+                <input type="email" id="from" ng-model="vm.contact.Email" required="" placeholder="email address">
+            </div>
+            <div forminput>
+                <label for="message">Message</label>
+                <textarea class="form-control" type="text" rows="5" id="message" ng-model="vm.contact.Message" required=""></textarea>
+            </div>
+            
+            <input class="btn btn-lg btn-primary" type="submit" value="Submit" />
+        </div>
+</form>
+</div>

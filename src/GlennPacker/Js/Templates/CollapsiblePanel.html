@@ -1,0 +1,7 @@
+﻿<div class="collapsiblepanel">
+    <a ng-click="togglePanel(show)"><i class="fa" ng-class="show? 'fa-caret-square-o-up' : 'fa-caret-square-o-down'"></i></a>
+    
+    <div ng-if="show">
+        <ng-transclude></ng-transclude>
+    </div>
+</div>
