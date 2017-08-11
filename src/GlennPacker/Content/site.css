@@ -459,10 +459,10 @@ main.nav-is-visible {
 article.main {
   padding: 20px;
 }
-.home .circleimage {
+.circleimage {
   border-radius: 50%;
   height: 230px;
-  width: auto;
+  width: 230px;
 }
 .home .slide .slide1 img {
   height: 349px;
@@ -474,7 +474,7 @@ article.main {
   width: 600px;
 }
 .home .panel {
-  height: 425px;
+  min-height: 440px;
 }
 .frontend .slide .slide1,
 .backend .slide .slide1 {

@@ -1,23 +1,39 @@
 ﻿<div>
     <h1>Contact Glenn</h1>
+    
+    <div ng-hide="vm.sent">
+        <form name="contactForm" ng-submit="vm.send()">
+            <div class="col-md-12">
+                <div forminput>
+                    <label for="from">Name</label>
+                    <input type="text" id="name" ng-model="vm.contact.Name" required="" placeholder="Name">
+                </div>
 
-    <form name="contactForm" ng-submit="vm.send()">
+                <div forminput>
+                    <label for="from">Email Address</label>
+                    <input type="email" id="from" ng-model="vm.contact.Email" required="" placeholder="email address">
+                </div>
+                <div forminput>
+                    <label for="message">Message</label>
+                    <textarea class="form-control" type="text" rows="5" id="message" ng-model="vm.contact.Message" required=""></textarea>
+                </div>
+
+                <input class="btn btn-lg btn-primary" type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+    
+    <div ng-if="vm.sent">
         <div class="col-md-12">
-            <div  forminput>
-                <label for="from">Name</label>
-                <input type="text" id="name" ng-model="vm.contact.Name" required="" placeholder="Name">
+            <div class="col-md-4">
+                <img class="circleimage" src="../../Content/Img/GlennPacker.jpg" />
             </div>
-
-            <div forminput>
-                <label for="from">Email Address</label>
-                <input type="email" id="from" ng-model="vm.contact.Email" required="" placeholder="email address">
+            <div class="col-md-4">
+                Thanks for contacting me i'll get back to you as soon as I can.
             </div>
-            <div forminput>
-                <label for="message">Message</label>
-                <textarea class="form-control" type="text" rows="5" id="message" ng-model="vm.contact.Message" required=""></textarea>
+            <div class="col-md-4">
+                <img class="circleimage" src="../../Content/Img/cat-waiting-for-the-mail.jpg" />
             </div>
-            
-            <input class="btn btn-lg btn-primary" type="submit" value="Submit" />
         </div>
-</form>
+    </div>
 </div>

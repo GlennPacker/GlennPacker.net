@@ -16,7 +16,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GlennPacker</RootNamespace>
     <AssemblyName>GlennPacker</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -26,6 +26,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -85,19 +86,17 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Optimization, Version=1.1.0.4, Culture=neutral, PublicKeyToken=0be84d52cfe0b414, processorArchitecture=MSIL">
       <HintPath>..\packages\BenTaylor.Microsoft.AspNet.Web.Optimization.1.1.0.4\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
@@ -136,6 +135,7 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
       <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
       <Private>True</Private>
@@ -266,6 +266,7 @@
     <Content Include="apple-icon.png" />
     <Content Include="browserconfig.xml" />
     <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\Img\20160329_205819.jpg" />
     <Content Include="Content\Img\backend\ASPnet.jpg" />
     <Content Include="Content\Img\backend\ASPNET35Fundamentals.jpg" />
     <Content Include="Content\Img\backend\aspnet4fundamentals.png" />
@@ -325,6 +326,7 @@
     <Content Include="Content\Img\backend\VBNETFundamentals.jpg" />
     <Content Include="Content\Img\backend\webforms.png" />
     <Content Include="Content\Img\backend\webperformance.png" />
+    <Content Include="Content\Img\cat-waiting-for-the-mail.jpg" />
     <Content Include="Content\Img\cd-logo.svg" />
     <Content Include="Content\Img\Ecert3.jpg" />
     <Content Include="Content\Img\ey.jpg" />
@@ -431,7 +433,6 @@
     <Content Include="Js\modules.js" />
     <Content Include="Js\Services\ContactService.js" />
     <Content Include="Js\Templates\CollapsiblePanel.html" />
-    <Content Include="Js\Templates\Contact - Copy.html" />
     <Content Include="Js\Templates\Contact.html" />
     <Content Include="Js\Templates\Clients.html" />
     <Content Include="Js\Templates\BackEnd.html" />
@@ -499,29 +500,12 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\ConfirmEmail.cshtml" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
-    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\ForgotPassword.cshtml" />
-    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Account\ResetPassword.cshtml" />
-    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\SendCode.cshtml" />
-    <Content Include="Views\Account\VerifyCode.cshtml" />
-    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
-    <Content Include="Views\Manage\ChangePassword.cshtml" />
-    <Content Include="Views\Manage\Index.cshtml" />
-    <Content Include="Views\Manage\ManageLogins.cshtml" />
-    <Content Include="Views\Manage\SetPassword.cshtml" />
-    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_header.cshtml" />
     <Content Include="Views\Shared\_Nav.cshtml" />
     <Content Include="Views\Jasmine\Index.cshtml" />
+    <Content Include="Views\Home\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

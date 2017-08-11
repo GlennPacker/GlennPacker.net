@@ -275,3 +275,4 @@ __pycache__/
 # tools/
 src/GlennPacker/Web.Release.config
 src/GlennPacker/Web.Debug.config
+src/GlennPacker/Web.Release.config
