@@ -273,3 +273,5 @@ __pycache__/
 
 # Cake - Uncomment if you are using it
 # tools/
+src/GlennPacker/Web.Release.config
+src/GlennPacker/Web.Debug.config

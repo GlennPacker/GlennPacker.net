@@ -4,12 +4,14 @@ namespace GlennPacker.Controllers
 {
     public class JasmineController : Controller
     {
+#if DEBUG        
         // GET: Jasmine
         public ActionResult Index()
         {
-#if DEBUG
+
             return View();
-#endif
+
         }
+#endif
     }
 }
