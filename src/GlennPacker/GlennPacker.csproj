@@ -488,12 +488,8 @@
     <Content Include="Scripts\restangular.js" />
     <Content Include="Scripts\restangular.min.js" />
     <Content Include="Scripts\slick.js" />
-    <Content Include="Web.config" />
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
@@ -506,6 +502,13 @@
     <Content Include="Views\Shared\_Nav.cshtml" />
     <Content Include="Views\Jasmine\Index.cshtml" />
     <Content Include="Views\Home\Error.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
