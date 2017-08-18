@@ -1,9 +1,11 @@
 ﻿using System.Web.Http;
+using System.Web.Http.Cors;
 using GlennPacker.Core;
 using GlennPacker.Entities.Models;
 
 namespace GlennPacker.Controllers
 {
+    [EnableCors(origins: "http://vuejs.glennpacker.net,http://localhost:3000", headers: "*", methods: "*")]
     public class ContactController : ApiController
     {
         private readonly IEmailServiceWrapper _emailServiceWrapper;
