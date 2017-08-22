@@ -524,6 +524,9 @@ article.main {
 .collapsiblepanel a {
   line-height: 40px;
 }
+.collapsiblepanel dd a {
+  line-height: 22px;
+}
 .collapsiblepanel div {
   position: relative;
   margin-right: 25px;
